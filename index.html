@@ -21,6 +21,7 @@
             // });
             $("input").keyup(function() {
                 const name = $("input").val();
+                console.log(name);
                 $.post("suggestions.php", {
                     suggestion: name
                 }, function (data, status) {
