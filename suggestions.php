@@ -6,7 +6,7 @@
 
         if (!empty($username)) {
             foreach ($exisitingNames as $exisitingName) {
-                if (strpos($exisitingName, $name) !== false) {
+                if (strpos($exisitingName, $username) !== false) {
                     echo $exisitingName;
                     echo "<br>";
                 }
