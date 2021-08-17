@@ -22,7 +22,7 @@
             $("input").keyup(function() {
                 const name = $("input").val();
                 console.log(name);
-                $.post("suggestions.php", {
+                $.post("./suggestions.php", {
                     suggestion: name
                 }, function (data, status) {
                     console.log("HELLO!");
