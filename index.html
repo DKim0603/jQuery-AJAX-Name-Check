@@ -25,6 +25,8 @@
                 $.post("suggestions.php", {
                     suggestion: name
                 }, function (data, status) {
+                    console.log("HELLO!");
+                    console.log(data);
                     $("#text").html(data);
                     alert(status);
                 });
