@@ -4,13 +4,13 @@
     if (isset($_POST['suggestion'])) {
         $username = $_POST['suggestion'];
 
-        if (!empty($name)) {
+        if (!empty($username)) {
             foreach ($exisitingNames as $exisitingName) {
                 if (strpos($exisitingName, $name) !== false) {
                     echo $exisitingName;
                     echo "<br>";
                 }
             }
-        }
-        
+        }      
     }
+?>

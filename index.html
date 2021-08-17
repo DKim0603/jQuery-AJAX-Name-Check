@@ -24,7 +24,7 @@
                 $.post("suggestions.php", {
                     suggestion: name
                 }, function (data, status) {
-                    $("text").html(data);
+                    $("#text").html(data);
                 });
             });
         });
